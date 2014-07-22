@@ -1,0 +1,281 @@
+<!--141003 고예찬
+[x]는 이후에 이미지 태그로 넣을 것 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Play 도서</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="main_sign"><img src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px /></div>
+            <div id="search">
+                <input id="s_input" placeholder="검색"></input>
+                <button id="s_button">[search]</button>
+            </div>
+            <div id="user">
+                <button id="user_menu">[menu]</button>
+                <button id="user_login">[login]</button>
+            </div>
+        </header>
+
+        <nav>
+            <div id="left_bar">
+                <div id="category">
+                    <span class="category_icon">[book]</span>
+                    <span class="category_name">도서</span>
+                </div>
+                <div id="sidebar">
+                    <div id="sidebar_show">[dropleft]
+                        <div id="sidebar_hidden">
+                            <div class="sidebar_hidden_item">
+                                <div class="sidebar_hidden_item_icon" id="app">[app]</div>
+                                <div class="sidebar_hidden_item_name">앱</div>
+                            </div>
+                            <div class="sidebar_hidden_item">
+                                <div class="sidebar_hidden_item_icon" id="movie">[movie]</div>
+                                <div class="sidebar_hidden_item_name">영화</div>
+                            </div>
+                            <div class="sidebar_hidden_item">
+                                <div class="sidebar_hidden_item_icon" id="device">[device]</div>
+                                <div class="sidebar_hidden_item_name">기기</div>
+                            </div>
+                            <div class="sidebar_hidden_item">
+                                <div class="sidebar_hidden_item_icon" id="store">[store]</div>
+                                <div class="sidebar_hidden_item_name">스토어</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar_content">
+                        <div class="sidebar_item">내 책</div>
+                        <div class="sidebar_item">쇼핑하기</div>
+                    </div>
+                </div>>
+            </div>
+            <div id="right_bar">
+                <div id="genre">
+                    <span>장르</span>
+                    <span>[dropdown]</span>
+                </div>
+                <div class="seperation">[ | ]</div>
+                <div id="nav_tab_menu">
+                    <ul>
+                        <li>홈</li>
+                        <li>인기 차트</li>
+                        <li>신간</li>
+                    </ul>
+                </div>
+                <div id="aux_button">
+                    <button>[help]</button>
+                    <button>[setting]</button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="wrapper">
+            <div id="body_content">
+                <section class="card_container" id="weekly_bestseller">
+                    <header>
+                        <div class="container_title">주간 베스트셀러</div>
+                        <div class="container_subtitle">한 주 동안 가장 많은 사랑을 받은 도서</div>
+                        <button class="see_more">더보기</button>
+                    </header>
+                    <div class="card_list">
+                        <ul>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">어서와 연애는 처음이지?</div>
+                                    <div class="card_author">장해정</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩980</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">잡담이 능력이다</div>
+                                    <div class="card_author">사이토 다카시</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩9,100</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">생각 버리기 연습</div>
+                                    <div class="card_author">코이케 류노스케</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩980</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">인생을 단순하게 사는 100가지 방법</div>
+                                    <div class="card_author">일레인 제임스</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩9,600</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card_container" id="fantasy_martialarts">
+                    <header>
+                        <div class="container_title">판타지/무협 최고 50% 할인</div>
+                        <div class="container_subtitle">모든 도서 1권은 무료로 드려요!</div>
+                        <button class="see_more">더보기</button>
+                    </header>
+                    <div class="card_list">
+                        <ul>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">[세트] 제국의 꿈(전10권/완결)</div>
+                                    <div class="card_author">강동호</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩17,280</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">[세트] 타메라 곤 (전8권/완결)</div>
+                                    <div class="card_author">현민</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩13,440</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">[세트] 강호유정 (전6권/완결)</div>
+                                    <div class="card_author">무장</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩14,000</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">[세트] 검마(전10권/완결)</div>
+                                    <div class="card_author">글작소</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩17,280</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card_container" id="foreign_language">
+                    <header>
+                        <div class="container_title">들리는 책으로 외국어 정복</div>
+                        <div class="container_subtitle">원어민 발음을 들으며 공부하세요</div>
+                        <button class="see_more">더보기</button>
+                    </header>
+                    <div class="card_list">
+                        <ul>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">시나공 토익 스피킹 만점의 법칙: 국내 최다인 25세트의 실전문제로 최상위 레벨을 찍는다!</div>
+                                    <div class="card_author">인세진</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩17,500</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">하루 3문장 영어일기 무작정 따라하기: 31개 영작 공식을 담은 기본서와 5000개 문장을 담은 표현사전을 한 권에!</div>
+                                    <div class="card_author">강윤혜</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩15,400</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">비즈니스 영어회화 &amp; 이메일 핵심패턴 233: 비즈니스 회화와 이메일을 패턴으로 정복한다!</div>
+                                    <div class="card_author">차형석</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩11,200</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_preview">
+                                    <img src="http://placehold.it/126x193" />
+                                </div>
+                                <div class="card_details">
+                                    <div class="card_name">영어회화 핵심패턴 233 기초편: 중학교 영어 실력으로 일상회화가 해결된다!</div>
+                                    <div class="card_author">백선엽</div>
+                                    <div class="card_price">
+                                        <span class="card_price_number">₩11,200</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div id="footer_link_container">
+                    <span id="footer_link_copyright">@2014 Google</span>
+                    <span id="footer_link">
+                    <a href=#>사이트서비스약관</a>
+                    <a href=#>기기판매약관</a>
+                    <a href=#>개인정보취급방침</a>
+                    <a href=#>개발자</a>
+                </span>
+                </div>
+                <div class="subfooter">
+                    상호명: Google Inc. | 대표자: Eric Schmidt | 주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States | 대표전화: +1 650-253-0000 | <a href=#>도움말</a> | 이메일: <a href=#>gpk-usersupport@google.com</a>
+                </div>
+                <div class="subfooter">
+                    구글 플레이에 등록된 앱과 게임은 개발자들이 제공하고 판매하는 것이며, 구글은 개발자가 아닌 이상 등록한 상품 정보 및 거래에 대한 어떠한 책임도 지지 않습니다.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
