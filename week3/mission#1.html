@@ -12,14 +12,20 @@
 <body>
     <div id="container">
         <header>
-            <div id="main_sign"><img src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px /></div>
+            <div id="main_sign">
+                <img id="sign" src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px />
+            </div>
             <div id="search">
                 <input id="s_input" placeholder="검색"></input>
                 <button id="s_button">[search]</button>
             </div>
-            <div id="user">
-                <button id="user_menu">[menu]</button>
-                <button id="user_login">[login]</button>
+            <div id="user_container">
+                <div id="user_button">
+                    <button id="user_menu">
+                        <img src="http://www.computercourage.com/wp-content/themes/computercourage/img/menu-icon-grid.png" width=16px height=16px/>
+                    </button>
+                    <button id="user_login">로그인</button>
+                </div>
             </div>
         </header>
 
@@ -29,32 +35,6 @@
                     <span class="category_icon">[book]</span>
                     <span class="category_name">도서</span>
                 </div>
-                <div id="sidebar">
-                    <div id="sidebar_show">[dropleft]
-                        <div id="sidebar_hidden">
-                            <div class="sidebar_hidden_item">
-                                <div class="sidebar_hidden_item_icon" id="app">[app]</div>
-                                <div class="sidebar_hidden_item_name">앱</div>
-                            </div>
-                            <div class="sidebar_hidden_item">
-                                <div class="sidebar_hidden_item_icon" id="movie">[movie]</div>
-                                <div class="sidebar_hidden_item_name">영화</div>
-                            </div>
-                            <div class="sidebar_hidden_item">
-                                <div class="sidebar_hidden_item_icon" id="device">[device]</div>
-                                <div class="sidebar_hidden_item_name">기기</div>
-                            </div>
-                            <div class="sidebar_hidden_item">
-                                <div class="sidebar_hidden_item_icon" id="store">[store]</div>
-                                <div class="sidebar_hidden_item_name">스토어</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_content">
-                        <div class="sidebar_item">내 책</div>
-                        <div class="sidebar_item">쇼핑하기</div>
-                    </div>
-                </div>>
             </div>
             <div id="right_bar">
                 <div id="genre">
@@ -75,6 +55,33 @@
                 </div>
             </div>
         </nav>
+
+        <aside>
+            <div id="sidebar_show">[dropleft]
+                <div id="sidebar_hidden">
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="app">[app]</div>
+                        <div class="sidebar_hidden_item_name">앱</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="movie">[movie]</div>
+                        <div class="sidebar_hidden_item_name">영화</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="device">[device]</div>
+                        <div class="sidebar_hidden_item_name">기기</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="store">[store]</div>
+                        <div class="sidebar_hidden_item_name">스토어</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <div class="sidebar_item">내 책</div>
+                <div class="sidebar_item">쇼핑하기</div>
+            </div>
+        </aside>
 
         <div id="wrapper">
             <div id="body_content">
