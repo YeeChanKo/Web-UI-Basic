@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Google Play 도서</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" type="text/css" href="header.css" />
+        <link rel="stylesheet" type="text/css" href="nav.css" />
+        <link rel="stylesheet" type="text/css" href="aside.css" />
+        <link rel="stylesheet" type="text/css" href="content.css" />
+        <link rel="stylesheet" type="text/css" href="footer.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body>
+        <header>
+            <div id="logo_wrapper">
+                <div id="logo">
+                    <img id="sign" src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px />
+                </div>
+            </div>
+            <div id="search">
+                <div id="s_wrapper">
+                    <input id="s_input" placeholder="검색"></input>
+                <button id="s_button">
+                    <a id="s_button_icon"></a>
+                </button>
+            </div>
+            </div>
+        <div id="user_container">
+            <div id="user_button">
+                <a id="user_menu"></a>
+                <button id="user_login">로그인</button>
+            </div>
+        </div>
+        </header>
+
+    <div id="wrapper">
+        <nav>
+            <div id="left_bar">
+                <div id="category">
+                    <span id="category_icon_wrapper"><a id="category_icon"></a></span>
+                    <span id="category_name">도서</span>
+                </div>
+            </div>
+            <div id="right_bar">
+                <button id="genre">
+                    장르
+                    <a></a>
+                </button>
+                <div class="spacer"></div>
+                <div id="nav_tab_menu">
+                    <ul>
+                        <li>홈</li>
+                        <li>인기 차트</li>
+                        <li>신간</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="aux_button">
+                <button>
+                    <a></a>
+                </button>
+                <button>
+                    <a></a>
+                </button>
+            </div>
+        </nav>
+
+        <aside>
+            <div id="sidebar_show">
+                <a></a>
+                <div id="sidebar_hidden">
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="app">[app]</div>
+                        <div class="sidebar_hidden_item_name">앱</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="movie">[movie]</div>
+                        <div class="sidebar_hidden_item_name">영화</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="device">[device]</div>
+                        <div class="sidebar_hidden_item_name">기기</div>
+                    </div>
+                    <div class="sidebar_hidden_item">
+                        <div class="sidebar_hidden_item_icon" id="store">[store]</div>
+                        <div class="sidebar_hidden_item_name">스토어</div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar_content">
+                <div class="sidebar_item">내 책</div>
+                <div class="sidebar_item">쇼핑하기</div>
+            </div>
+        </aside>
+
+        <div id="content">
+            <section class="card_container" id="weekly_bestseller">
+                <header>
+                    <div class="container_title">주간 베스트셀러</div>
+                    <div class="container_subtitle">한 주 동안 가장 많은 사랑을 받은 도서</div>
+                    <button class="see_more">더보기</button>
+                </header>
+                <div class="card_list">
+                    <ul>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card_container" id="weekly_bestseller">
+                <header>
+                    <div class="container_title">주간 베스트셀러</div>
+                    <div class="container_subtitle">한 주 동안 가장 많은 사랑을 받은 도서</div>
+                    <button class="see_more">더보기</button>
+                </header>
+                <div class="card_list">
+                    <ul>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card_container" id="weekly_bestseller">
+                <header>
+                    <div class="container_title">주간 베스트셀러</div>
+                    <div class="container_subtitle">한 주 동안 가장 많은 사랑을 받은 도서</div>
+                    <button class="see_more">더보기</button>
+                </header>
+                <div class="card_list">
+                    <ul>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_preview">
+                                <a id="book_image"></a>
+                            </div>
+                            <div class="card_details">
+                                <div class="card_name">생각 버리기 연습</div>
+                                <div class="card_author">코이케 류노스케</div>
+                                <div class="card_price">
+                                    <span class="card_price_number">₩9,600</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div id="footer_link_container">
+                <span id="footer_link_copyright">©2014 Google</span>
+                <span id="footer_link">
+                    <a href=#>사이트서비스약관</a>
+                    <a href=#>기기판매약관</a>
+                    <a href=#>개인정보취급방침</a>
+                    <a href=#>개발자</a>
+                </span>
+            </div>
+            <div class="subfooter">
+                상호명: Google Inc. | 대표자: Eric Schmidt | 주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States | 대표전화: +1 650-253-0000 | <a href=#>도움말</a> | 이메일: <a href=#>gpk-usersupport@google.com</a>
+            </div>
+            <div class="subfooter">
+                구글 플레이에 등록된 앱과 게임은 개발자들이 제공하고 판매하는 것이며, 구글은 개발자가 아닌 이상 등록한 상품 정보 및 거래에 대한 어떠한 책임도 지지 않습니다.
+            </div>
+        </footer>
+    </div>
+    </body>
+
+</html>
