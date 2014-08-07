@@ -10,17 +10,28 @@
     <link rel="stylesheet" type="text/css" href="aside.css" />
     <link rel="stylesheet" type="text/css" href="content.css" />
     <link rel="stylesheet" type="text/css" href="footer.css" />
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="(max-width: 480px)" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
 <body>
+    <div id="header_for_mobile">
+        <div id="mobile_header">
+            <a id="hamburgericon"></a>
+            <a id="signicon"></a>
+            <a id="searchicon"></a>
+        </div>
+        <div id="mobile_nav">
+            <button id="my_book">내 책</button>
+            <button id="newly_released">신규 출시</button>
+            <button id="pop_chart">인기 차트</button>
+        </div>
+    </div>
+
     <header id="body_head">
         <div id="logo_wrapper">
             <div id="logo">
-                <a href=#>
-                    <img id="sign" src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px />
-                </a>
+                <img id="sign" src="http://www.gstatic.com/android/market_images/web/play_logo_x2.png" width=183px height=39px />
             </div>
         </div>
         <div id="search">
