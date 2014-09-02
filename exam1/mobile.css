@@ -1,6 +1,6 @@
 #header_for_mobile
 {
-    display: block;
+    display: initial;
 }
 
 #mobile_header
@@ -19,9 +19,13 @@
     display: none;
 }
 
+#wrapper
+{
+    top: initial;
+}
+
 #content
 {
-    top : 0px;
     min-width: 0px;
 }
 

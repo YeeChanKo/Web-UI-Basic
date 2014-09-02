@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div id= 'wrap'>
+<ul>
+<li>뉴스</li>
+<li>카페</li>
+<li>블로그</li>
+<li>메일</li>
+</ul>
+<script>
+var wrapdiv = document.getElementById("wrap");
+var target = wrapdiv.children[0].children[2];
+var newnode = document.createElement("li");
+newnode.textContent = "쇼핑";
+wrapdiv.children[0].insertBefore(newnode,target);
+</script>
+</div>
+</body>
+</html>
