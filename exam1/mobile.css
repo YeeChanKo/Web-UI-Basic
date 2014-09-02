@@ -31,16 +31,12 @@
 
 .card_container
 {
-    margin-left: 1%;
-    margin-right: 1%;
-    /*중앙정렬되게 고칠 것*/
-    overflow: hidden;
+    margin: 0px;
     min-width: 375px;
 }
 
 .see_more
 {
-    right: 40px;
     top: 20px;
 }
 

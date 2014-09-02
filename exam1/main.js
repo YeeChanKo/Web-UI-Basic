@@ -4,7 +4,7 @@
 var isDropDownShown = false;
 var genrebutton = document.getElementById("genre");
 var genredropdown = document.getElementById("dropdown");
-var body = document.getElementsByTagName("body")[0];
+var body = document.body;
 var dropdownicon = document.getElementById("dropdownicon");
 
 genrebutton.addEventListener("click",showDropDown,false);
@@ -217,8 +217,23 @@ function init(e)
 
 // [5] resize 시 더보기 버튼 위치 변화
 
-window.addEventListener("load",seemore_pos_adjust,false);
-window.addEventListener("resize",seemore_pos_adjust,false);
+window.addEventListener("load",onload,false);
+window.addEventListener("resize",onresize,false);
+
+// onload는 모두 여기에
+function onload()
+{
+    seemore_pos_adjust();
+    mobilecardlist();
+}
+
+// onresize는 모두 여기에
+function onresize()
+{
+    seemore_pos_adjust();
+    mobilecardlist();
+}
+
 function seemore_pos_adjust()
 {
     var seemorelist = document.querySelectorAll(".see_more");
@@ -239,5 +254,22 @@ function seemore_pos_adjust()
             }
         }
         seemorelist[i].style.left = result + list[0].offsetWidth - seemorelist[i].offsetWidth + "px";
+    }
+}
+
+
+// [6] mobile version 카드 리스트 위치변화
+
+function mobilecardlist()
+{
+    var cardcontent = document.getElementById("content");
+    
+    if(window.innerWidth <= 480 && window.innerWidth >= 360)
+    {
+        cardcontent.style.marginLeft = (window.innerWidth - 360)/2 +"px";
+    }
+    else
+    {
+        
     }
 }
