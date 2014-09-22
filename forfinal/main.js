@@ -173,7 +173,7 @@ function seemorePosAdjust()
 }
 
 
-// [6] mobile version 카드 리스트 위치변화
+// [6] mobile version 카드 리스트 위치변화(중앙정렬)
 
 function mobilecardlistPosAdjust()
 {
@@ -195,7 +195,6 @@ function onload()
 {
     seemorePosAdjust();
     mobilecardlistPosAdjust();
-    checkMobileWidthAndSet();
 }
 
 // onresize는 모두 여기에
@@ -203,34 +202,42 @@ function onresize()
 {
     seemorePosAdjust();
     mobilecardlistPosAdjust();
-    checkMobileWidthAndSet();
 }
 
 
 
-// [7] mobile version 좌우 터치시 책내용 바꿔주기 (미완성)
+// [7] mobile version 좌우 터치시 책 바꿔주기
 
 var x_beforeTouch = 0;
 var x_afterTouch = 0;
 
-function checkMobileWidthAndSet()
-{
-    if(window.innerWidth <= 480)
-    {
-        // 터치 핸들러 추가
-    }
-    else
-    {
-        // 터치 핸들러 제거
-    }
-}
-
 function cardListTouchStart(e)
 {
-    console.log(event.touches);
-    console.log(event.changedTouches);
-    console.log(event.targetTouches);
+    x_beforeTouch = e.changedTouches[0].clientX;
 }
 
-var targetList = document.querySelector(".card_list");
-targetList.addEventListener("touchstart",cardListTouchStart,false);
+function cardListTouchEnd(e)
+{
+    x_afterTouch = e.changedTouches[0].clientX;
+    var target_ul = e.currentTarget.firstElementChild;
+    var prevMarginLeft = parseInt(target_ul.style.marginLeft);
+    var maxMarginLeft = -(target_ul.childElementCount - 1) * 170;
+    
+    // 넘어가는 기준은 120px
+    if(((x_beforeTouch - x_afterTouch) >= 120) && (prevMarginLeft > maxMarginLeft))
+    {
+        target_ul.style.marginLeft = (prevMarginLeft - 340) + "px";
+    }
+    else if(((x_beforeTouch - x_afterTouch) <= -120) && (prevMarginLeft < 0))
+    {
+        target_ul.style.marginLeft = (prevMarginLeft + 340) + "px";
+    }
+}
+
+var targetLists = document.querySelectorAll(".card_list");
+for(var i = 0; i < targetLists.length; i++)
+{
+    targetLists[i].addEventListener("touchstart",cardListTouchStart,false);
+    targetLists[i].addEventListener("touchend",cardListTouchEnd,false);
+    targetLists[i].firstElementChild.style.marginLeft = "0px"; // 초기화
+}
