@@ -1,15 +1,11 @@
 // [1] 장르 버튼 클릭시 드롭다운 보여주기
 
-// var clientHeight = window.innerHeight;
 var isDropDownShown = false;
 var genrebutton = document.getElementById("genre");
 var genredropdown = document.getElementById("dropdown");
-var body = document.body;
-var dropdownicon = document.getElementById("dropdownicon");
 
 genrebutton.addEventListener("click",showDropDown,false);
-// genredropdown.removeEventListener("click",showDropDown,false);
-body.addEventListener("click",hideDropDownForBody,false);
+document.body.addEventListener("click",hideDropDownForBody,false);
 
 function showDropDown()
 {
@@ -39,91 +35,7 @@ function hideDropDownForBody(e)
 
 // [2] 장르 선택시 책 바꿔주기
 
-var aBookList = [
-    {
-        id : "book-iLQ5BAAAQBAJ",
-        name : "아서왕과 원탁의 기사들",
-        imgSrc : "http://goo.gl/tfHw4e",
-        src : "http://goo.gl/65Im7q",
-        author : "토머스 불핀치",
-        price : "₩9500"
-    },
-    {
-        id : "book-iLQ5BAAAQBAJ",
-        name : "아서왕과 원탁의 기사들",
-        imgSrc : "http://goo.gl/tfHw4e",
-        src : "http://goo.gl/65Im7q",
-        author : "토머스 불핀치",
-        price : "₩9500"
-    },
-    {
-        id : "book-iLQ5BAAAQBAJ",
-        name : "아서왕과 원탁의 기사들",
-        imgSrc : "http://goo.gl/tfHw4e",
-        src : "http://goo.gl/65Im7q",
-        author : "토머스 불핀치",
-        price : "₩9500"
-    },
-    {
-        id : "book-iLQ5BAAAQBAJ",
-        name : "아서왕과 원탁의 기사들",
-        imgSrc : "http://goo.gl/tfHw4e",
-        src : "http://goo.gl/65Im7q",
-        author : "토머스 불핀치",
-        price : "₩9500"
-    },
-    {
-        id : "book-iLQ5BAAAQBAJ",
-        name : "아서왕과 원탁의 기사들",
-        imgSrc : "http://goo.gl/tfHw4e",
-        src : "http://goo.gl/65Im7q",
-        author : "토머스 불핀치",
-        price : "₩9500"
-    }
-];
-
-var bBookList = [
-    {
-        id : "book-jLQ5BADJFIEWL",
-        name : "어린왕자",
-        imgSrc : "http://goo.gl/pDXdVo",
-        src : "http://goo.gl/aSvgGF",
-        author : "앙투안 드 생텍쥐페리",
-        price : "₩5000"
-    },
-    {
-        id : "book-jLQ5BADJFIEWL",
-        name : "어린왕자",
-        imgSrc : "http://goo.gl/pDXdVo",
-        src : "http://goo.gl/aSvgGF",
-        author : "앙투안 드 생텍쥐페리",
-        price : "₩5000"
-    },
-    {
-        id : "book-jLQ5BADJFIEWL",
-        name : "어린왕자",
-        imgSrc : "http://goo.gl/pDXdVo",
-        src : "http://goo.gl/aSvgGF",
-        author : "앙투안 드 생텍쥐페리",
-        price : "₩5000"
-    },
-    {
-        id : "book-jLQ5BADJFIEWL",
-        name : "어린왕자",
-        imgSrc : "http://goo.gl/pDXdVo",
-        src : "http://goo.gl/aSvgGF",
-        author : "앙투안 드 생텍쥐페리",
-        price : "₩5000"
-    },
-    {
-        id : "book-jLQ5BADJFIEWL",
-        name : "어린왕자",
-        imgSrc : "http://goo.gl/pDXdVo",
-        src : "http://goo.gl/aSvgGF",
-        author : "앙투안 드 생텍쥐페리",
-        price : "₩5000"
-    }
-];
+// to be complete
 
 var sTemplate = "<li><div class='card_preview'><a id='book_image' style='background-image:url(<%=imgUrl%>);' href='<%=endPageLink%>'></a></div><div class='card_details'><div class='card_name'><%=title%></div><div class='card_author'><%=author%></div><div class='card_price'><span class='card_price_number'><%=price%></span></div></div></li>";                                                                                          
 function makeBookElement(sTemplate, aBook){
@@ -268,8 +180,15 @@ function mobilecardlist()
     {
         cardcontent.style.marginLeft = (window.innerWidth - 360)/2 +"px";
     }
-    else
-    {
-        
-    }
 }
+
+
+// [7] Ajax로 데이터 받아오기
+
+var url = "http://localhost:8080/GooglePlayBook/booklist/db_booklist1.json";
+var request = new XMLHttpRequest();
+request.open("GET", url, false);
+request.send(null);
+var result = request.responseText;
+result = JSON.parse(result);
+console.log("hohooho");

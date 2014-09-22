@@ -1,0 +1,159 @@
+#body_head
+{
+    background-color: #F1F1F1;
+    height: 60px;
+    display: flex;
+}
+
+
+
+#logo_wrapper
+{
+    width: 244px;
+    height: 60px;
+    display: flex;
+    flex: 0 0 auto;
+    order: 1;
+}
+
+#logo
+{
+    width: 183px;
+    height: 58px;
+    padding: 0px 30px;
+}
+
+#sign
+{
+    width: 183px;
+    height: 39px;
+    margin: 11px 0px;
+}
+
+
+
+#search
+{ 
+    width: 650px;
+    min-width: 300px;
+    height: 60px;
+    flex: 0 1 auto;
+    order: 2;
+}
+
+#s_wrapper
+{
+    float: left;
+    width: 100%;
+    min-width: 333px;
+    height: 30px;
+    padding: 15px 0px;
+    1display:inline-block;
+    1overflow:hidden;
+    display: flex;
+    position: relative
+}
+
+#s_input
+{
+    float: left;
+    width: 100%;
+    height: 20px;
+    padding: 4px 8px;
+    border: 1px solid #CCCCCC;
+    border-right: 0px;
+    font-size: 16px;
+    flex: 1 1 auto;
+}
+
+#s_input:hover
+{
+    border: 1px solid #A8A8A8;
+}
+
+#s_button
+{
+    float: left;
+    background-color: #4285F4;
+    width: 60px;
+    height: 30px;
+    padding: 0px 15px;
+    position: relative;
+    1right: 1px;
+    flex: 0 0 auto;
+}
+
+#s_button:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 0px 0px;
+}
+
+#s_button_icon
+{
+    background-image: url(https://ssl.gstatic.com/gb/images/v1_2e543709.png);
+    background-position: -69px -349px;
+    background-size: 112px 1828px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+#user_container
+{
+    1float: right;
+    width: auto;
+    height: 60px;
+    padding: 0px 30px;
+    margin-left: 29px;
+    display: flex;
+    flex: 1 0 auto;
+    order: 3;
+    justify-content: flex-end;
+}
+
+#user_button
+{
+    text-align: right;
+    line-height: 60px;
+}
+
+#user_menu
+{
+    background-image: url(https://ssl.gstatic.com/gb/images/v1_2e543709.png);
+    background-position: -51px -452px;
+    background-size: 112px 1828px;
+    opacity: 0.55;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+#user_menu:hover
+{
+    opacity: 1;
+}
+
+#user_login
+{
+    width: 68px;
+    height: 30px;
+    padding: 0px 12px;
+    margin-left: 15px;
+    background-color: #4285F4;
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+#user_login:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 0px 0px;
+}

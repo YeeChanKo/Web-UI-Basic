@@ -1,0 +1,14 @@
+body
+{
+    background-color: #e5e5e5;
+    color: #333;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#header_for_mobile
+{
+    display: none;
+}

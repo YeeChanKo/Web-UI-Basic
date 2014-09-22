@@ -1,0 +1,235 @@
+nav
+{
+    width: 100%;
+    min-width: 964px;
+    height: 48px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+#left_bar
+{
+    float: left;
+    width: 200px;
+    height: 48px;
+    background-color: rgb(26, 161, 225);
+}
+
+#category_icon_wrapper
+{
+    float: left;
+    width: 65px;
+    height: 48px;
+}
+
+#category_icon
+{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 12px 0px 0px 28px;
+    background-image: url(images/category_book.png);
+}
+
+#category_name
+{
+    float: right;
+    width: 127px;
+    height: 48px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 48px;
+    position: relative;
+    top: 1px;
+}
+
+
+
+#right_bar
+{
+    float: left;
+    width: 320px;
+    height: 48px;
+    background-color: white;
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+}
+
+#genre
+{
+    float: left;
+    width: 80px;
+    height: 48px;
+    padding: none;
+    line-height: 48px;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 38px;
+    padding: 0px 14px;
+    color: rgb(115, 115, 115);
+    background-color: transparent;
+}
+
+#genre:hover
+{
+    background-color: #F2F2F2;
+}
+
+#genre > a
+{
+    float: right;
+    background-image: url(images/genre_dropdown.png);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 17px;
+    right: 3px;
+}
+
+#dropdown
+{
+    width: 202px;
+    height: 450px;
+    z-index: 20;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -13px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 40px 0px;
+    display: none;
+}
+
+#dropdown li
+{
+    width: 160px;
+    height: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    padding: 6px 14px;
+    list-style: none;
+    line-height: 18px;
+}
+
+#dropdown li:hover
+{
+    background-color:#F5F5F5;
+}
+
+#dropdown li:nth-child(1)
+{
+    margin-top: 6px;
+}
+
+.spacer
+{
+    float: left;
+    background-image: url(images/spacer.png);
+    width: 11px;
+    height: 46px;
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav_tab_menu
+{
+    float: left;
+    word-spacing: -0.5px;
+}
+
+#nav_tab_menu > ul > li:hover
+{
+    background-color: #F2F2F2;
+}
+
+#nav_tab_menu > ul > li:nth-child(1)
+{
+    float: left;
+    width: 42px;
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    border-bottom: 3px solid #1AA1E1;
+    color: #333333;
+}
+
+#nav_tab_menu > ul > li:nth-child(2)
+{
+    float: left;
+    width: 87px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#nav_tab_menu > ul > li:nth-child(3)
+{
+    float: left;
+    width: 56px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#aux_button
+{
+    float: right;
+    width: auto;
+    height: 48px;
+    position: relative;
+    right: 30px;
+    text-align: right;
+}
+
+#aux_button > button:nth-child(1)
+{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #D3D3D3;
+    background-color: transparent;
+    margin: 10px 6px;
+    vertical-align: top;
+}
+
+#aux_button > button:nth-child(1) > a
+{
+    width: 21px;
+    height: 21px;
+    background-image: url(images/help.png);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+#aux_button > button:nth-child(2)
+{
+    width: 57px;
+    height: 30px;
+    border: 1px solid #D3D3D3;
+    background-color: transparent;
+    margin: 10px 10px;
+    vertical-align: top;
+}
+
+#aux_button > button:nth-child(2) > a
+{
+    width: 21px;
+    height: 21px;
+    background-image: url(images/setting.png);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#aux_button > button:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.270588) 0px 1px 0px 0px;
+    border: 1px solid #B9B9B9;
+}
